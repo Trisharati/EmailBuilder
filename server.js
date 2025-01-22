@@ -17,8 +17,7 @@ const port = process.env.PORT || 2000
 mongoose.connect(process.env.mongourl).then(()=>{
 app.listen(port,()=>{
     console.log('DB is connected')
-    console.log(`http://localhost:${port}`)
-    console.log('mongourl',process.env.mongourl);
+    console.log(`http://localhost:${port}`)    
     
 })
 }).catch((err)=>{
